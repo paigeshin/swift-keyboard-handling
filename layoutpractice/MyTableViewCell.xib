@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="79" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="layoutpractice" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="424" height="79"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="MyCell" customModule="layoutpractice" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="424" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -48,6 +48,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bubbleText" destination="V3Y-6P-eMx" id="Z85-JR-chF"/>
+            </connections>
             <point key="canvasLocation" x="300" y="152.34375"/>
         </tableViewCell>
     </objects>

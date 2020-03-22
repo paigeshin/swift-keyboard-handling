@@ -10,9 +10,14 @@ import UIKit
 
 class YouTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bubbleText: UILabel!
+    @IBOutlet weak var profileimage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        profileimage.layer.cornerRadius = profileimage.frame.width
+        / 2;
+        profileimage.clipsToBounds = true;
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

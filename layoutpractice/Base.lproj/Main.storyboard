@@ -17,7 +17,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HWz-cj-VBh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-dc-hfY">
                                 <rect key="frame" x="0.0" y="826" width="414" height="50"/>
@@ -31,6 +31,9 @@
                                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.9414597603" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                         <state key="normal" title="전송"/>
+                                        <connections>
+                                            <action selector="sendButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76O-TU-Y7o"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-tA-frU">
                                         <rect key="frame" x="50" y="10" width="298" height="30"/>
@@ -76,6 +79,8 @@
                     <connections>
                         <outlet property="inputViewBottomMargin" destination="AfB-fH-XdX" id="3iA-1R-72w"/>
                         <outlet property="tableView" destination="HWz-cj-VBh" id="GQm-42-Jiv"/>
+                        <outlet property="textView" destination="9LO-tA-frU" id="k29-8U-j6X"/>
+                        <outlet property="textViewHeight" destination="cpM-hB-yh8" id="vTY-Nf-ScB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,6 +10,8 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bubbleText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
